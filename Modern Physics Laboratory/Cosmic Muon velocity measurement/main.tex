@@ -1,0 +1,39 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+
+\title{Misura velocità del muone prodotto dai raggi cosmici}
+\author{Francesco Pio Merafina, Onofrio Davide Caputo, Alessandro Lamesta}
+\date{}
+\begin{document}
+\maketitle
+\section{Abstract:}
+Sappiamo che sulla superficie terrestre arrivano particelle $\mu$ prodotte dalle interazioni tra i raggi cosmici e l'atmosfera terrestre, quindi sapendo le caratteristiche di queste particelle, e costruendo un setup sperientale apposito, possiamo ottenere la velocità con cui viaggiano queste particelle.
+~
+\section{Cenni teorici:}
+Sappiamo che i $\mu$ che arrivano sulla superficie terrestre, al livello del mare, hanno un flusso di $\Phi$=100m$^{-2}$s$^{-1}$str$^{-1}$, ed hanno una energia cinetica di 4GeV, sapendo che la loro massa è di 105 MeVc$^{-2}$ otteniamo un fattore di Lorentz di $\gamma$=39, quindi il $\mu$ è relativistico e ci aspettiamo che abbia velocità vicina a quella della luce nel vuoto.
+~
+\section{Apparato sperimentale:}
+l'apparato sperimentale consiste in due scintillatori, due supporti per separarli spazialmente, un oscilloscopio, un modulo NIM, cavi di diversa lunghezza per collegare gli scintillatori al modulo NIM.
+~
+\section{Metodologia di misura:}
+Ognuno degli scintillatori è collegato ad un discriminatore che prende in input, oltre al segnale dello strumento, anche il segnale di soglia, fissato a -30mV. Il discriminatore, a questo punto, converte il segnale analogico in digitale secondo lo standard NIM, il che significa che il segnale sarà caratterizzato da uno 0 NIM corrispondente a 0V e un 1 NIM corrispondente a -800mV. A questo punto i segnali discriminati arrivano al modulo di coincidenza collegato ad
+essi per mezzo di cavi di lunghezza differente, ovvero un cavo da 1 ns per uno dei due scintillatori, ed uno da 8 ns per l'altro. Infine ci sono altri collegamenti che portano i segnali dei due discriminatori
+e del modulo di coincidenza ad un oscilloscopio. Il modulo di coincidenza invia un segnale che indica il passaggio della particella da entrambi gli scintillatori. E solo a ´questa condizione che l’oscilloscopio prende in considerazione i segnali provenienti dai
+discriminatori. Per la precisione, sono stati utilizzati cavi da 16ns per trasportare i segnali dai discriminatori ai canali dell’oscilloscopio e da 5ns per il segnale che parte dal modulo di
+coincidenza. Si è mostrato essere necessario mettere l'oscilloscopio in modalità average per poter eseguire la misura poiché non si è in rado di eliminare gli  jitter temporali. La differenza dei cavi dei due scintillatori nasce dalla necessità di fissare il trigger con magggiore certezza; infatti mettendo il trigger sul canale associato allo scintillatore posto sootto, siamo sicuri che il trigger avverrà quando tutti e due sono all'uno logico NIM e quindi possiamo associare le fluttuazioni temporali allo scintillatore posto in alto, se agissimo al contrario non potremmo essere certi sulle fluttuazioni poiché lo scintillatore in alto ha un vantaggio temporale rispetto a quello inferiore. La misura è stata effettuata variando, con distanze note, la distanza tra i due scintillatori e facendo in modo che si trovassero uno perfettamente sopra l'altro; questo per minimizzare le perdite di muoni dovuto al diverso angolo solido. A fissata altezza si vuole misurare il ritardo temporale tra i due segnali, ed in modalità average si prende il valore misurato e mediato su 512 segnali registrati dall'oscilloscopio, avendo una grande variazione di eventi osservati da tutti e due gli scintillatori all'aumentare della distanza, bisogna tener conto di ciò quando si va a fare i conteggi nel modulo NIM, da circa 1000 a circa 600.
+~
+\section{Analisi dati:}
+Per ogni fissato valore di distanza si è eseguita quattro volte la misura dei ritardi temporali, e facendone una media, e valutandone la deviazione standard, si riporta il tutto su un grafico distanza-ritardo. Una nota importante sui ritardi; essi sono deterinati come la differena tra i fronti di salita dei due segnali del primo scintillatore e del secondo, invertendo il segno e quindi l'ordine cronologico degli eventi, quindi dal fit lineare che si va a fare si ottiene che il reciproco della pendenza è la velocità del $\mu$. Osserviamo però che c'è un offset fisso che corrisponde ad una anomalia dovuta alla differenza di risposta dei PMT, ed alla differenza tra le costanti di diseccitazione, il valore dell'intercetta del fit è proprio questo offset dei due segnali.
+~
+\section{Risultati e conclusioni:}
+Calcolando il reciproco della pendenza della retta di fit otteniamo un valore di velocità del $\mu$=(2.85$\pm$1.30)*10$^{8}$ms$^{-1}$, compatibile con la previsione fatta del $\mu$ relativistico.
+~
+\section{Grafici e tabelle:}
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=\linewidth]{velocità muone.jpg}
+    \caption{Ritardo dei segnali in funzione della distanza degli scintillatori}
+    \label{figura1}
+\end{figure}
+\end{document}
