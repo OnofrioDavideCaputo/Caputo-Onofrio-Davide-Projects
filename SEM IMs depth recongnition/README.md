@@ -1,7 +1,7 @@
-CNN IMAGE PROCESSING algorithm developed during my thesis work.
+CNN IMAGE PROCESSING ALGORITHM DEVELOPED DURING MY THESIS WORK.
 
-This has been used in order to better evaluate the average intermetallic compunds layers tickness, hence
-allowing a more precise estimation of the diffusion process activation energy.
+THIS HAS BEEN USED IN ORDER TO BETTER EVALUATE THE AVERAGE INTERMETALLIC COMPUNDS LAYERS TICKNESS, HENCE
+ALLOWING A MORE PRECISE ESTIMATION OF THE DIFFUSION PROCESS ACTIVATION ENERGY.
 
-Data collected during the study and analyzed with this algorithm have shown, for the first time in a study
-conducted by "STMicroelectronics", a value lower than 1,1 eV, thus confirming its overestimation.
+DATA COLLECTED DURING THE STUDY AND ANALYZED WITH THIS ALGORITHM HAVE SHOWN, FOR THE FIRST TIME IN A STUDY
+CONDUCTED BY "STMICROELECTRONICS", A VALUE LOWER THAN 1,1 EV, THUS CONFIRMING ITS OVERESTIMATION.
