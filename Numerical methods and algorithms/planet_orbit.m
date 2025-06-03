@@ -8,9 +8,7 @@ options = odeset('RelTol',1.e-6);
 x1 = zeros(1, length(tspan) + 1); y1 = zeros(1, length(tspan) + 1);
 x2 = zeros(1, length(tspan) + 1); y2 = zeros(1, length(tspan) + 1);
 
-%%%%% Solve differential equations for x and y using ode45 
-%%%%% with arguments tspan and options. 
-%%%%% Determine x1, y1 and x2, y2 
+%%%%% Solve differential equations for x and y
 
 [t,xy] = ode45(@(t,xy) orbit(xy), tspan, [x0, u0, y0, v0], options);
 x = xy(:,1); y = xy(:,3);
